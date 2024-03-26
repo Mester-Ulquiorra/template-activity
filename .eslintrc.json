@@ -1,0 +1,31 @@
+{
+    "env": {
+        "es6": true,
+        "node": true
+    },
+    "extends": ["eslint:recommended", "plugin:@typescript-eslint/recommended"],
+    "ignorePatterns": ["node_modules/**/*", "*.js"],
+    // hi people this is a comment!!!
+    "parser": "@typescript-eslint/parser",
+    "parserOptions": {
+        "ecmaVersion": "latest",
+        "sourceType": "module"
+    },
+    "plugins": ["@typescript-eslint", "unused-imports"],
+    "rules": {
+        "indent": [
+            "error",
+            4,
+            {
+                "SwitchCase": 1
+            }
+        ],
+        "linebreak-style": ["error", "unix"],
+        "quotes": ["error", "double", { "allowTemplateLiterals": true }],
+        "semi": ["error", "always"],
+        "no-cond-assign": "off",
+        "@typescript-eslint/no-unused-vars": "off",
+        "unused-imports/no-unused-imports": "error",
+        "no-unreachable": "error"
+    }
+}

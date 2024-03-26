@@ -1,0 +1,5 @@
+{
+    "liveServer.settings.mount": [["/", "client/dist"]],
+    "editor.defaultFormatter": "rvest.vs-code-prettier-eslint",
+    "typescript.tsdk": "node_modules/typescript/lib"
+}

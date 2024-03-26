@@ -1,0 +1,19 @@
+{
+    "private": true,
+    "dependencies": {
+        "@discord/embedded-app-sdk": "latest",
+        "colyseus.js": "^0.15.18"
+    },
+    "name": "client",
+    "module": "src/index.ts",
+    "type": "module",
+    "scripts": {
+        "build": "bun build src/index.ts src/bundle.ts --outdir=dist --minify --splitting"
+    },
+    "devDependencies": {
+        "@types/bun": "latest"
+    },
+    "peerDependencies": {
+        "typescript": "^5.0.0"
+    }
+}
